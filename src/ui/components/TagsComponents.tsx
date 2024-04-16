@@ -5,3 +5,7 @@ export const SectionComponent = ({ ...props }) => {
 export const DivComponent = ({ ...props }) => {
    return <div {...props} />;
 };
+
+export const NavLinkComponent = ({ ...props }) => {
+   return <a {...props} />;
+};
