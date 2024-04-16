@@ -1,5 +1,11 @@
+import { Header } from './ui/partials/Global/Header';
+
 function App() {
-   return <h1>Hello world!</h1>;
+   return (
+      <>
+         <Header />
+      </>
+   );
 }
 
 export default App;
