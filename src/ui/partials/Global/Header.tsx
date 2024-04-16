@@ -1,7 +1,9 @@
+import { Logo } from '../../components/SVGs/Logo';
+
 export const Header = () => {
    return (
       <header>
-         <h1>header</h1>
+         <Logo />
       </header>
    );
 };
