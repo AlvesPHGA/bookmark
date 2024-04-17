@@ -8,11 +8,11 @@ import {
 
 export const Header = () => {
    return (
-      <header>
-         <SectionComponent>
+      <header className="py-10">
+         <SectionComponent className="max-w-[1200px] flex items-center mx-auto justify-between">
             <Logo />
 
-            <DivComponent>
+            <DivComponent className="flex items-center space-x-10">
                <NavComponent />
                <Button>Login</Button>
             </DivComponent>
