@@ -22,6 +22,8 @@ export const divStyle = tv({
       box: {
          def: 'flex items-center',
          header: 'flex items-center space-x-10',
+         sbm: 'max-w-[1200px] mx-auto flex border',
+         sbm_content: 'space-y-10 w-[45%]',
       },
    },
 

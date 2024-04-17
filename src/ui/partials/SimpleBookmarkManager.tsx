@@ -1,5 +1,12 @@
-import { SectionComponent } from '../components/TagsComponents';
+import { ContentSBMComponent } from '../components/SBM/ContentSBMComponent';
+import { DivComponent, SectionComponent } from '../components/TagsComponents';
 
 export const SimpleBookmarkManager = () => {
-   return <SectionComponent section="sbm"></SectionComponent>;
+   return (
+      <SectionComponent section="sbm">
+         <DivComponent box="sbm">
+            <ContentSBMComponent />
+         </DivComponent>
+      </SectionComponent>
+   );
 };

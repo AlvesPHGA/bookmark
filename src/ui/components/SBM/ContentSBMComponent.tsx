@@ -2,7 +2,7 @@ import { DivComponent } from '../TagsComponents';
 
 export const ContentSBMComponent = () => {
    return (
-      <DivComponent>
+      <DivComponent box="sbm_content">
          <h1>A Simple Bookmark Manager</h1>
          <p>
             A clean and simple interface to organize your favourite websites.
