@@ -9,10 +9,10 @@ import {
 export const Header = () => {
    return (
       <header className="py-10">
-         <SectionComponent className="max-w-[1200px] flex items-center mx-auto justify-between">
+         <SectionComponent>
             <Logo />
 
-            <DivComponent className="flex items-center space-x-10">
+            <DivComponent box="header">
                <NavComponent />
                <Button>Login</Button>
             </DivComponent>

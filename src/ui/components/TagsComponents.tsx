@@ -4,12 +4,14 @@ import {
    SectionComponentProps,
 } from '../../data/@types/ITags';
 
+import { divStyle, sectionStyle } from '../styles/tagsStyles';
+
 export const SectionComponent = ({ ...props }: SectionComponentProps) => {
-   return <section {...props} />;
+   return <section className={sectionStyle()} {...props} />;
 };
 
-export const DivComponent = ({ ...props }: DivComponentProps) => {
-   return <div {...props} />;
+export const DivComponent = ({ box, ...props }: DivComponentProps) => {
+   return <div className={divStyle({ box })} {...props} />;
 };
 
 export const NavLinkComponent = ({ ...props }: NavLinkComponentProps) => {
