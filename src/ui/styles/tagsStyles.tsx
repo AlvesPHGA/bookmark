@@ -20,5 +20,5 @@ export const divStyle = tv({
 });
 
 export const navLinkStyle = tv({
-   base: 'text-xl uppercase font-normal text-veryDarkBlue hover:text-softRed',
+   base: 'text-xl uppercase font-normal text-veryDarkBlue hover:text-softRed transform-all',
 });
