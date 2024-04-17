@@ -6,8 +6,11 @@ import {
 
 import { divStyle, navLinkStyle, sectionStyle } from '../styles/tagsStyles';
 
-export const SectionComponent = ({ ...props }: SectionComponentProps) => {
-   return <section className={sectionStyle()} {...props} />;
+export const SectionComponent = ({
+   section,
+   ...props
+}: SectionComponentProps) => {
+   return <section className={sectionStyle({ section })} {...props} />;
 };
 
 export const DivComponent = ({ box, ...props }: DivComponentProps) => {

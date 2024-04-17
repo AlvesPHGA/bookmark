@@ -1,7 +1,9 @@
+import { SimpleBookmarkManager } from '../ui/partials/SimpleBookmarkManager';
+
 export const Home = () => {
    return (
       <main>
-         <h2>Home</h2>
+         <SimpleBookmarkManager />
       </main>
    );
 };

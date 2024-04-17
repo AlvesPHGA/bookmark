@@ -1,7 +1,18 @@
 import { tv } from 'tailwind-variants';
 
 export const sectionStyle = tv({
-   base: 'max-w-[1200px] flex items-center mx-auto justify-between',
+   base: 'flex items-center mx-auto justify-between',
+
+   variants: {
+      section: {
+         def: 'max-w-[1200px] flex items-center mx-auto justify-between',
+         sbm: 'w-full py-10 border',
+      },
+   },
+
+   defaultVariants: {
+      section: 'def',
+   },
 });
 
 export const divStyle = tv({
