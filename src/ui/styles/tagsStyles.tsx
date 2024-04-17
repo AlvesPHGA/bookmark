@@ -18,3 +18,7 @@ export const divStyle = tv({
       box: 'def',
    },
 });
+
+export const navLinkStyle = tv({
+   base: 'text-xl uppercase font-normal text-veryDarkBlue hover:text-softRed',
+});
