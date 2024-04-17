@@ -7,6 +7,10 @@ import {
 } from '../../components/TagsComponents';
 
 export const Header = () => {
+   function handleClick() {
+      alert('login');
+   }
+
    return (
       <header className="py-10">
          <SectionComponent>
@@ -14,7 +18,7 @@ export const Header = () => {
 
             <DivComponent box="header">
                <NavComponent />
-               <Button>Login</Button>
+               <Button onClick={handleClick}>Login</Button>
             </DivComponent>
          </SectionComponent>
       </header>
