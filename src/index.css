@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+   body {
+      @apply text-lg;
+   }
+
+   h1,
+   h2 {
+      @apply text-veryDarkBlue;
+   }
+
+   p {
+      @apply text-grayishBlue;
+   }
+}
