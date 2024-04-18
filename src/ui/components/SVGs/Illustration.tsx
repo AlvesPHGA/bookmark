@@ -4,6 +4,7 @@ export const Illustration = () => {
    return (
       <svg
          className={svgStyle()}
+         data-testid="illustration"
          xmlns="http://www.w3.org/2000/svg"
          xmlnsXlink="http://www.w3.org/1999/xlink"
          viewBox="60 5 512 450"

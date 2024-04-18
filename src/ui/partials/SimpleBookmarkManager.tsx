@@ -8,7 +8,7 @@ export const SimpleBookmarkManager = () => {
       <SectionComponent section="sbm">
          <DivComponent box="sbm">
             <ContentSBMComponent />
-            <Illustration data-testid="illustration" />
+            <Illustration />
          </DivComponent>
          <BackIllusComponent typeBack="blue_sbm" />
       </SectionComponent>
