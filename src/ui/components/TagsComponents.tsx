@@ -17,6 +17,6 @@ export const DivComponent = ({ box, ...props }: DivComponentProps) => {
    return <div className={divStyle({ box })} {...props} />;
 };
 
-export const NavLinkComponent = ({ ...props }: NavLinkComponentProps) => {
-   return <a href="#" className={navLinkStyle()} {...props} />;
+export const NavLinkComponent = ({ link, ...props }: NavLinkComponentProps) => {
+   return <a href="#" className={navLinkStyle({ link })} {...props} />;
 };

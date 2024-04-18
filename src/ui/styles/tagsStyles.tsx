@@ -22,8 +22,9 @@ export const divStyle = tv({
       box: {
          def: 'flex items-center',
          header: 'flex items-center space-x-10',
-         sbm: 'max-w-[1200px] mx-auto flex border',
-         sbm_content: 'space-y-10 w-[45%]',
+         sbm: 'w-[1200px] mx-auto flex border',
+         sbm_content: 'space-y-10 w-[40%] py-10',
+         cta: 'space-x-10',
       },
    },
 
@@ -33,5 +34,20 @@ export const divStyle = tv({
 });
 
 export const navLinkStyle = tv({
-   base: 'text-xl uppercase font-normal text-veryDarkBlue hover:text-softRed transform-all',
+   base: 'font-normal transition',
+
+   variants: {
+      link: {
+         def: 'text-white',
+         header: 'text-xl uppercase text-veryDarkBlue hover:text-softRed',
+         blue_cta:
+            'bg-[#5267DF] py-2.5 px-6 rounded text-white font-medium border-2 border-[#5267DF] hover:text-[#5267DF] hover:bg-transparent',
+         white_cta:
+            'bg-[#F7F7F7] py-2.5 px-6 rounded text-grayishBlue font-medium border-2 border-[#F7F7F7] hover:border-[#f7f7f7] hover:bg-transparent',
+      },
+   },
+
+   defaultVariants: {
+      link: 'def',
+   },
 });

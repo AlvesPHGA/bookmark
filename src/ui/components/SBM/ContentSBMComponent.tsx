@@ -1,4 +1,4 @@
-import { DivComponent } from '../TagsComponents';
+import { DivComponent, NavLinkComponent } from '../TagsComponents';
 
 export const ContentSBMComponent = () => {
    return (
@@ -9,7 +9,14 @@ export const ContentSBMComponent = () => {
             Open a new browser tab and see your sites load instantly. Try it for
             free.
          </p>
-         <DivComponent></DivComponent>
+         <DivComponent box="cta">
+            <NavLinkComponent link="blue_cta">
+               Get it on Chrome
+            </NavLinkComponent>
+            <NavLinkComponent link="white_cta">
+               Get it on Firefox
+            </NavLinkComponent>
+         </DivComponent>
       </DivComponent>
    );
 };

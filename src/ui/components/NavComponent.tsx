@@ -6,7 +6,9 @@ export const NavComponent = () => {
    return (
       <nav className="space-x-10">
          {links.map((link) => (
-            <NavLinkComponent key={link}>{link}</NavLinkComponent>
+            <NavLinkComponent link="header" key={link}>
+               {link}
+            </NavLinkComponent>
          ))}
       </nav>
    );
