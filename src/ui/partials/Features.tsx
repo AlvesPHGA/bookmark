@@ -1,3 +1,10 @@
+import { ContentFeaturesComponent } from '../components/Features/ContentFeaturesComponent';
+import { SectionComponent } from '../components/TagsComponents';
+
 export const Features = () => {
-   return;
+   return (
+      <SectionComponent>
+         <ContentFeaturesComponent />
+      </SectionComponent>
+   );
 };
