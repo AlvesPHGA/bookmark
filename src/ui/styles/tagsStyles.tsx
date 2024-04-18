@@ -6,7 +6,7 @@ export const sectionStyle = tv({
    variants: {
       section: {
          def: 'max-w-[1200px] flex items-center mx-auto justify-between',
-         sbm: 'w-full py-10 border',
+         sbm: 'w-full py-10',
       },
    },
 
@@ -22,7 +22,7 @@ export const divStyle = tv({
       box: {
          def: 'flex items-center',
          header: 'flex items-center space-x-10',
-         sbm: 'w-[1200px] mx-auto flex border items-center h-[500px]',
+         sbm: 'w-[1200px] mx-auto flex items-center h-[500px]',
          sbm_content: 'space-y-10 w-[40%] py-10',
          cta: 'space-x-10',
       },
