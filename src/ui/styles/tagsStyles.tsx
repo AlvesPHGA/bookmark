@@ -51,3 +51,17 @@ export const navLinkStyle = tv({
       link: 'def',
    },
 });
+
+export const imageStyle = tv({
+   base: '',
+
+   variants: {
+      typeImage: {
+         def: 'absolute w-[60%] h-[500px] left-[610px] z-10 top-2',
+      },
+   },
+
+   defaultVariants: {
+      typeImage: 'def',
+   },
+});

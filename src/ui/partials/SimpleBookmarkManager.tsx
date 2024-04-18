@@ -1,14 +1,19 @@
 import { BackIllusComponent } from '../components/BackIllusComponent';
 import { ContentSBMComponent } from '../components/SBM/ContentSBMComponent';
-import { DivComponent, SectionComponent } from '../components/TagsComponents';
+import {
+   DivComponent,
+   ImageComponent,
+   SectionComponent,
+} from '../components/TagsComponents';
 
 export const SimpleBookmarkManager = () => {
    return (
       <SectionComponent section="sbm">
          <DivComponent box="sbm">
             <ContentSBMComponent />
-            <BackIllusComponent
-               typeBack="illustration"
+            <ImageComponent
+               src="./src/assets/illustration-hero.svg"
+               alt="Image illustration"
                data-testid="illustration"
             />
          </DivComponent>
