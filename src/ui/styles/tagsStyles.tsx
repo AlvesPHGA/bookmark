@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const sectionStyle = tv({
-   base: 'flex items-center mx-auto justify-between',
+   base: 'relative flex items-center mx-auto justify-between',
 
    variants: {
       section: {
