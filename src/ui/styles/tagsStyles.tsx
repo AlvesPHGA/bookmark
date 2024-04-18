@@ -1,5 +1,4 @@
 import { tv } from 'tailwind-variants';
-import backImage from '../../assets/illustration-hero.svg';
 
 export const sectionStyle = tv({
    base: 'flex items-center mx-auto justify-between',
@@ -26,7 +25,6 @@ export const divStyle = tv({
          sbm: 'w-[1200px] mx-auto flex border items-center h-[500px]',
          sbm_content: 'space-y-10 w-[40%] py-10',
          cta: 'space-x-10',
-         illustrarion: `w-[60%] h-[500px] bg-[url('${backImage}')] bg-no-repeat bg-cover absolute left-[620px]`,
       },
    },
 
