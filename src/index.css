@@ -11,6 +11,10 @@
       @apply text-5xl font-medium;
    }
 
+   h2 {
+      @apply text-3xl font-medium;
+   }
+
    h1,
    h2 {
       @apply text-veryDarkBlue;

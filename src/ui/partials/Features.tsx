@@ -3,7 +3,7 @@ import { SectionComponent } from '../components/TagsComponents';
 
 export const Features = () => {
    return (
-      <SectionComponent>
+      <SectionComponent section="features">
          <ContentFeaturesComponent />
       </SectionComponent>
    );
