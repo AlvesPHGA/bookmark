@@ -7,7 +7,7 @@ export const sectionStyle = tv({
       section: {
          def: 'max-w-[1200px] flex items-center mx-auto justify-between',
          sbm: 'w-full py-10',
-         features: 'py-16 border text-center',
+         features: 'py-16 border text-center space-y-16',
       },
    },
 
@@ -23,10 +23,14 @@ export const divStyle = tv({
       box: {
          def: 'flex items-center',
          header: 'flex items-center space-x-10',
+         // Simple bookmark manager
          sbm: 'w-[1200px] mx-auto flex items-center h-[500px]',
          sbm_content: 'space-y-10 w-[40%] py-10',
          cta: 'space-x-10',
+         // Features
          feature_content: 'w-[1200px] mx-auto space-y-5',
+         tab_component: 'w-[1200px] mx-auto space-y-5',
+         tab_buttons: 'mx-auto',
       },
    },
 

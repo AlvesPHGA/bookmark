@@ -10,8 +10,8 @@ export default {
             // Neutral
             grayishBlue: 'hsl(229, 8%, 60%)',
             veryDarkBlue: 'hsl(229, 31%, 21%)',
-         // other
-         'color-blue':'#5368DF'
+            // other
+            'color-blue': '#5368DF',
          },
 
          fontFamily: {

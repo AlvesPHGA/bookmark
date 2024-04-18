@@ -6,6 +6,8 @@ export const buttonStyle = tv({
    variants: {
       types: {
          login: 'uppercase',
+         btn_tab:
+            'rounded-none bg-transparent text-grayishBlue font-medium border-0 px-8 border-b-2 border-[#f7f7f7]  pb-4',
       },
    },
 
