@@ -1,5 +1,3 @@
-import { DivComponent } from './TagsComponents';
-
-export const BackIllusComponent = () => {
-   return <DivComponent box="illustrarion" />;
+export const BackIllusComponent = ({ ...props }) => {
+   return <div {...props} />;
 };
