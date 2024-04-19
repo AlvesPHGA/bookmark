@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from '../../components/Form/Button';
 import { NavComponent } from '../../components/NavComponent';
 import { Logo } from '../../components/SVGs/Logo';
@@ -8,14 +7,6 @@ import {
 } from '../../components/TagsComponents';
 
 export const Header = () => {
-   const [active, setActive] = React.useState(false);
-
-   function handleClick() {
-      setActive(!active);
-   }
-
-   console.log(active);
-
    return (
       <header className="py-10">
          <SectionComponent>
@@ -23,9 +14,7 @@ export const Header = () => {
 
             <DivComponent box="header">
                <NavComponent />
-               <Button data-testid="login" onClick={handleClick}>
-                  Login
-               </Button>
+               <Button data-testid="login">Login</Button>
             </DivComponent>
          </SectionComponent>
       </header>
