@@ -7,12 +7,12 @@ const legendButton = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
 
 export const TabComponent = () => {
    const [activeTab, setActiveTab] = React.useState(0);
+   const [contentTab, setContentTab] = React.useState(0);
 
    function handleTab(index: number) {
       setActiveTab(index);
+      setContentTab(index);
    }
-
-   console.log(activeTab);
 
    return (
       <DivComponent box="tab_component">
@@ -30,7 +30,7 @@ export const TabComponent = () => {
             ))}
          </DivComponent>
 
-         <ContentTabsComponent />
+         <ContentTabsComponent value={contentTab} />
       </DivComponent>
    );
 };

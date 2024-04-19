@@ -32,13 +32,18 @@ export const divStyle = tv({
          tab_component: 'w-[1200px] mx-auto space-y-16',
          tab_buttons: 'mx-auto',
          tab_contents:
-            'w-full h-fit flex items-center justify-between pr-14 z-10',
+            'hidden w-full h-fit  items-center justify-between pr-14 z-10',
          tab_content: 'relative space-y-7 text-left w-[420px]',
+      },
+
+      isContentTab: {
+         true: 'flex',
       },
    },
 
    defaultVariants: {
       box: 'def',
+      isContentTab: false,
    },
 });
 
@@ -65,6 +70,6 @@ export const svgStyle = tv({
    slots: {
       illustration:
          'absolute w-[60%] h-[512px] object-contain left-[590px] z-10 top-0',
-      illustration_tab: 'rounded-md w-[50%] object-fill',
+      illustration_tab: 'rounded-md w-[55%]  h-[450px]',
    },
 });

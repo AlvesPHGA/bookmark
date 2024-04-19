@@ -284,10 +284,10 @@ export const Illustration = () => {
    );
 };
 
-export const Illustration_tab1 = () => {
+export const Illustration_tab = ({ image }: { image: string }) => {
    return (
       <img
-         src="./src/assets/illustration-features-tab-1.svg"
+         src={image}
          alt="Image Illustration"
          className={illustration_tab()}
       />

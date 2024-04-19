@@ -13,8 +13,12 @@ export const SectionComponent = ({
    return <section className={sectionStyle({ section })} {...props} />;
 };
 
-export const DivComponent = ({ box, ...props }: DivComponentProps) => {
-   return <div className={divStyle({ box })} {...props} />;
+export const DivComponent = ({
+   box,
+   isContentTab,
+   ...props
+}: DivComponentProps) => {
+   return <div className={divStyle({ box, isContentTab })} {...props} />;
 };
 
 export const NavLinkComponent = ({ link, ...props }: NavLinkComponentProps) => {
