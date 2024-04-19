@@ -4,7 +4,7 @@ import { ContentTabComponent } from './ContentTabComponent';
 
 export const ContentTabsComponent = () => {
    return (
-      <DivComponent>
+      <DivComponent box="tab_contents">
          <Illustration_tab1 />
          <ContentTabComponent />
       </DivComponent>
