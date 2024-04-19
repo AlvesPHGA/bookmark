@@ -1,5 +1,6 @@
 import { Button } from '../Form/Button';
 import { DivComponent } from '../TagsComponents';
+import { ContentTabsComponent } from './ContentTabsComponent';
 
 export const TabComponent = () => {
    return (
@@ -10,11 +11,7 @@ export const TabComponent = () => {
             <Button types="btn_tab">Easy Sharing</Button>
          </DivComponent>
 
-         <DivComponent>
-            <DivComponent></DivComponent>
-            <DivComponent></DivComponent>
-            <DivComponent></DivComponent>
-         </DivComponent>
+         <ContentTabsComponent />
       </DivComponent>
    );
 };
