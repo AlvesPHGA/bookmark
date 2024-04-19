@@ -7,7 +7,7 @@ export const sectionStyle = tv({
       section: {
          def: 'max-w-[1200px] flex items-center mx-auto justify-between',
          sbm: 'w-full py-10',
-         features: 'py-16 border text-center space-y-16',
+         features: 'py-20 text-center space-y-16',
       },
    },
 
@@ -31,7 +31,8 @@ export const divStyle = tv({
          feature_content: 'w-[1200px] mx-auto space-y-5',
          tab_component: 'w-[1200px] mx-auto space-y-16',
          tab_buttons: 'mx-auto',
-         tab_contents: 'w-full h-fit flex items-center justify-between pr-14',
+         tab_contents:
+            'w-full h-fit flex items-center justify-between pr-14 z-10',
          tab_content: 'relative space-y-7 text-left w-[420px]',
       },
    },
