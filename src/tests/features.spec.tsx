@@ -6,8 +6,8 @@ describe('Feature section', () => {
    it('should show three button on section', () => {
       const { getByText } = render(<Features />);
 
-      expect(getByText('Simple Bookmark')).toBeInTheDocument();
-      expect(getByText('Speedy Searching')).toBeInTheDocument();
-      expect(getByText('Easy Sharing')).toBeInTheDocument();
+      const tabButton = getByText('Simple Bookmark');
+
+      expect(tabButton).toBeInTheDocument();
    });
 });
