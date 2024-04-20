@@ -5,17 +5,17 @@ import { ContentTabComponent } from './ContentTabComponent';
 const contentTab = [
    {
       title: 'Bookmark in one click',
-      image: './src/assets/illustration-features-tab-1.svg',
+      image: './illustration-features-tab-1.svg',
       text: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.',
    },
    {
       title: 'Inteligent search',
+      image: './illustration-features-tab-2.svg',
       text: 'Our powerfull search feature will help you find saved sites in not time at all. No need to trawl through all of your bookmark.',
-      image: './src/assets/illustration-features-tab-2.svg',
    },
    {
       title: 'Share your bookmarks',
-      image: './src/assets/illustration-features-tab-3.svg',
+      image: './illustration-features-tab-3.svg',
       text: 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.',
    },
 ];
