@@ -8,6 +8,7 @@ export const sectionStyle = tv({
          def: 'max-w-[1200px] flex items-center mx-auto justify-between',
          sbm: 'w-full py-10',
          features: 'py-20 text-center space-y-16',
+         download: 'py-24',
       },
    },
 
@@ -34,6 +35,8 @@ export const divStyle = tv({
          tab_contents:
             'hidden w-full h-fit  items-center justify-between pr-14 z-10',
          tab_content: 'relative space-y-7 text-left w-[420px]',
+         // Download
+         down_content: 'w-[1200px] mx-auto space-y-5 w-[30%] text-center',
       },
 
       isContentTab: {

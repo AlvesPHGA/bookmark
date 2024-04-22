@@ -2,7 +2,7 @@ import { DivComponent } from '../TagsComponents';
 
 export const DownloadContentComponent = () => {
    return (
-      <DivComponent>
+      <DivComponent box="down_content">
          <h2>Download the extension</h2>
          <p>
             We've got more browsers in the pipeline. Please do let us know if

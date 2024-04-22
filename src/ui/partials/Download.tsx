@@ -3,7 +3,7 @@ import { SectionComponent } from '../components/TagsComponents';
 
 export const Download = () => {
    return (
-      <SectionComponent>
+      <SectionComponent section="download">
          <DownloadContentComponent />
       </SectionComponent>
    );
