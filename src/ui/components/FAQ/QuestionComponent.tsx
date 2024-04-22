@@ -1,16 +1,29 @@
+import React from 'react';
+import { faqStyle } from '../../styles/tagsStyles';
+
 interface QuestionComponentProps {
    asked: string;
    answer: string;
 }
 
+const { dl, dt, dd } = faqStyle({ answer: 'hidden' });
+
 export const QuestionComponent = ({
    asked,
    answer,
 }: QuestionComponentProps) => {
+   const [activeFAQ, setActiveFAQ] = React.useState(false);
+
+   function handleClickFAQ() {
+      setActiveFAQ(!activeFAQ);
+   }
+
    return (
-      <dl className="space-y-5 border-t-2 border-grayishBlue last:border-b-2 py-5">
-         <dt className="text-xl font-medium text-veryDarkBlue">{asked}</dt>
-         <dd className="text-grayishBlue">{answer}</dd>
+      <dl className={dl()}>
+         <dt role="button" onClick={handleClickFAQ} className={dt()}>
+            {asked}
+         </dt>
+         <dd className={dd({ activeFAQ })}>{answer}</dd>
       </dl>
    );
 };

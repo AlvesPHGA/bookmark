@@ -98,3 +98,24 @@ export const imgStyle = tv({
       dots: 'absolute top-0 w-full bg-[100%]',
    },
 });
+
+export const faqStyle = tv({
+   slots: {
+      dl: 'space-y-5 border-t-2 border-grayishBlue last:border-b-2 py-5',
+      dt: 'text-xl font-medium text-veryDarkBlue hover:text-softRed transition',
+      dd: 'text-grayishBlue transition',
+   },
+
+   variants: {
+      answer: {
+         hidden: {
+            dd: 'hidden',
+         },
+      },
+      activeFAQ: {
+         true: {
+            dd: 'block',
+         },
+      },
+   },
+});
