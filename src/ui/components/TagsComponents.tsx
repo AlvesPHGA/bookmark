@@ -30,8 +30,8 @@ export const ImageComponent = ({
    alt,
    ...props
 }: {
-   src: string;
-   alt: string;
+   src?: string;
+   alt?: string;
 }) => {
    return <img src={src} alt={alt} {...props} />;
 };
