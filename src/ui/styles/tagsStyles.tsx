@@ -8,7 +8,7 @@ export const sectionStyle = tv({
          def: 'max-w-[1200px] flex items-center mx-auto justify-between',
          sbm: 'w-full py-10',
          features: 'py-20 text-center space-y-16',
-         download: 'py-24',
+         download: 'py-24 space-y-20',
       },
    },
 
@@ -37,6 +37,12 @@ export const divStyle = tv({
          tab_content: 'relative space-y-7 text-left w-[420px]',
          // Download
          down_content: 'w-[1200px] mx-auto space-y-5 w-[30%] text-center',
+         down_cards:
+            'w-[1200px] mx-auto flex items-center justify-between py-16',
+         // Card
+         card: 'w-[360px] flex flex-col items-center h-fit pt-16 rounded-lg shadow-2xl shadow-grayishBlue mx-auto first:absolute first:top-0 last:absolute last:bottom-0 last:right-0',
+         card_box01: 'w-fit mx-auto text-center space-y-6 mb-10',
+         card_box02: 'py-8 w-full',
       },
 
       isContentTab: {
@@ -62,10 +68,15 @@ export const navLinkStyle = tv({
          white_cta:
             'bg-[#F7F7F7] py-2.5 px-6 rounded text-grayishBlue font-medium border-2 border-[#F7F7F7] hover:border-[#f7f7f7] hover:bg-transparent',
       },
+
+      card: {
+         def: 'mx-auto',
+      },
    },
 
    defaultVariants: {
       link: 'def',
+      card: 'def',
    },
 });
 
@@ -74,5 +85,12 @@ export const svgStyle = tv({
       illustration:
          'absolute w-[60%] h-[512px] object-contain left-[590px] z-10 top-0',
       illustration_tab: 'rounded-md w-[55%]  h-[450px]',
+   },
+});
+
+export const imgStyle = tv({
+   slots: {
+      browsers: 'mx-auto',
+      dots: 'absolute top-0 w-full bg-[100%]',
    },
 });

@@ -2,6 +2,7 @@ import React from 'react';
 import { VariantProps } from 'tailwind-variants';
 import {
    divStyle,
+   imgStyle,
    navLinkStyle,
    sectionStyle,
    svgStyle,
@@ -22,3 +23,7 @@ export interface NavLinkComponentProps
 export interface SVGComponentProps
    extends React.ComponentProps<'svg'>,
       VariantProps<typeof svgStyle> {}
+
+export interface ImageComponentProps
+   extends React.ComponentProps<'img'>,
+      VariantProps<typeof imgStyle> {}

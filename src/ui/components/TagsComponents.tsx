@@ -1,5 +1,6 @@
 import {
    DivComponentProps,
+   ImageComponentProps,
    NavLinkComponentProps,
    SectionComponentProps,
 } from '../../data/@types/ITags';
@@ -21,17 +22,14 @@ export const DivComponent = ({
    return <div className={divStyle({ box, isContentTab })} {...props} />;
 };
 
-export const NavLinkComponent = ({ link, ...props }: NavLinkComponentProps) => {
-   return <a href="#" className={navLinkStyle({ link })} {...props} />;
+export const NavLinkComponent = ({
+   link,
+   card,
+   ...props
+}: NavLinkComponentProps) => {
+   return <a href="#" className={navLinkStyle({ link, card })} {...props} />;
 };
 
-export const ImageComponent = ({
-   src,
-   alt,
-   ...props
-}: {
-   src?: string;
-   alt?: string;
-}) => {
-   return <img src={src} alt={alt} {...props} />;
+export const ImageComponent = ({ ...props }: ImageComponentProps) => {
+   return <img {...props} />;
 };
