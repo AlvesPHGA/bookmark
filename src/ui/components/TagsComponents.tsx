@@ -24,3 +24,14 @@ export const DivComponent = ({
 export const NavLinkComponent = ({ link, ...props }: NavLinkComponentProps) => {
    return <a href="#" className={navLinkStyle({ link })} {...props} />;
 };
+
+export const ImageComponent = ({
+   src,
+   alt,
+   ...props
+}: {
+   src: string;
+   alt: string;
+}) => {
+   return <img src={src} alt={alt} {...props} />;
+};
