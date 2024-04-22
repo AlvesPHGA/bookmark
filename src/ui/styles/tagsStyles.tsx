@@ -9,6 +9,7 @@ export const sectionStyle = tv({
          sbm: 'w-full py-10',
          features: 'py-20 text-center space-y-16',
          download: 'py-24 space-y-20',
+         faq: 'py-24 space-y-20 border',
       },
    },
 
@@ -43,6 +44,8 @@ export const divStyle = tv({
          card: 'w-[360px] flex flex-col items-center h-fit pt-16 rounded-lg shadow-2xl shadow-grayishBlue mx-auto first:absolute first:top-0 last:absolute last:bottom-0 last:right-0',
          card_box01: 'w-fit mx-auto text-center space-y-6 mb-10',
          card_box02: 'py-8 w-full',
+         // FAQ
+         faq_content: 'w-[25%] text-center mx-auto space-y-6',
       },
 
       isContentTab: {
