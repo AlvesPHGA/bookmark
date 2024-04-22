@@ -46,6 +46,7 @@ export const divStyle = tv({
          card_box02: 'py-8 w-full',
          // FAQ
          faq_content: 'w-[25%] text-center mx-auto space-y-6',
+         faq_questions: 'w-[30%] mx-auto ',
       },
 
       isContentTab: {

@@ -30,7 +30,7 @@ const FAQContent = [
 
 export const QuestionsComponent = () => {
    return (
-      <DivComponent>
+      <DivComponent box="faq_questions">
          {FAQContent.map(({ id, asked, answer }) => (
             <QuestionComponent key={id} asked={asked} answer={answer} />
          ))}
