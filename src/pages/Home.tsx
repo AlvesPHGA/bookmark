@@ -1,5 +1,6 @@
 import { Download } from '../ui/partials/Download';
 import { Features } from '../ui/partials/Features';
+import { FrequentlyAskedQuestions } from '../ui/partials/FrequentlyAskedQuestions';
 import { SimpleBookmarkManager } from '../ui/partials/SimpleBookmarkManager';
 
 export const Home = () => {
@@ -8,6 +9,7 @@ export const Home = () => {
          <SimpleBookmarkManager />
          <Features />
          <Download />
+         <FrequentlyAskedQuestions />
       </main>
    );
 };
