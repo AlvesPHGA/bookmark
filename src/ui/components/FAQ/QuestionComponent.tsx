@@ -20,7 +20,10 @@ export const QuestionComponent = ({
    }
 
    return (
-      <div className="border-b-2 border-grayishBlue pb-5 space-y-3 last:pb-0 last:border-0">
+      <div
+         data-testid={asked}
+         className="border-b-2 border-grayishBlue pb-5 space-y-3 last:pb-0 last:border-0"
+      >
          <dt role="button" onClick={handleClickFAQ} className={dt()}>
             {asked} <ChevronUp className={svg({ activeFAQ })} />
          </dt>
