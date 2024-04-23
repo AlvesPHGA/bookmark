@@ -9,4 +9,12 @@ describe('FAQ section', () => {
 
       screen.getByText('Frequently Asked Questions');
    });
+
+   it('Should display on device a small text', () => {
+      render(<FrequentlyAskedQuestions />);
+
+      screen.getByText(
+         "Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.",
+      );
+   });
 });
