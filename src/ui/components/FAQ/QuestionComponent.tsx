@@ -6,7 +6,7 @@ interface QuestionComponentProps {
    answer: string;
 }
 
-const { dl, dt, dd } = faqStyle({ answer: 'hidden' });
+const { dt, dd } = faqStyle({ answer: 'hidden' });
 
 export const QuestionComponent = ({
    asked,
@@ -19,11 +19,11 @@ export const QuestionComponent = ({
    }
 
    return (
-      <dl className={dl()}>
+      <div className="border-b-2 border-grayishBlue pb-5 space-y-3 last:pb-0 last:border-0">
          <dt role="button" onClick={handleClickFAQ} className={dt()}>
             {asked}
          </dt>
          <dd className={dd({ activeFAQ })}>{answer}</dd>
-      </dl>
+      </div>
    );
 };
