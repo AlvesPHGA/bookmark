@@ -27,7 +27,9 @@ export const QuestionComponent = ({
          <dt role="button" onClick={handleClickFAQ} className={dt()}>
             {asked} <ChevronUp className={svg({ activeFAQ })} />
          </dt>
-         <dd className={dd({ activeFAQ })}>{answer}</dd>
+         <dd data-testid={asked} className={dd({ activeFAQ })}>
+            {answer}
+         </dd>
       </div>
    );
 };

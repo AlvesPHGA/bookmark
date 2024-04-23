@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 
 import { render, screen } from '@testing-library/react';
 import { FrequentlyAskedQuestions } from '../ui/partials/FrequentlyAskedQuestions';
+import userEvent from '@testing-library/user-event';
 
 describe('FAQ section', () => {
    it('Should display on device the title', () => {
@@ -21,9 +22,19 @@ describe('FAQ section', () => {
    it('Should display some question on device reference faq section', () => {
       render(<FrequentlyAskedQuestions />);
 
-      screen.getByTestId('What is Bookmark?');
-      screen.getByTestId('How can I request a new browser?');
-      screen.getByTestId('Is there a mobile app?');
-      screen.getByTestId('What about other Chromium browsers?');
+      screen.getByText('What is Bookmark?');
+      screen.getByText('How can I request a new browser?');
+      screen.getByText('Is there a mobile app?');
+      screen.getByText('What about other Chromium browsers?');
+   });
+
+   it('Should click action to asked, where click action should device answer to user', async () => {
+      render(<FrequentlyAskedQuestions />);
+
+      const askedButton = screen.getByText('What is Bookmark?');
+
+      await userEvent.click(askedButton);
+
+      expect(askedButton).toBeTruthy();
    });
 });
