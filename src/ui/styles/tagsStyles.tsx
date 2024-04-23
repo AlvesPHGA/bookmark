@@ -102,7 +102,8 @@ export const imgStyle = tv({
 export const faqStyle = tv({
    slots: {
       dl: 'space-y-5 border-t-2 border-grayishBlue last:border-b-2 py-5',
-      dt: 'relative text-xl font-medium text-veryDarkBlue hover:text-softRed transition-all z-10',
+      dt: 'relative flex items-center justify-between px-1 text-xl font-medium text-veryDarkBlue hover:text-softRed transition-all z-10',
+      svg: 'hover:stroke-softRed',
       dd: 'text-grayishBlue',
    },
 
@@ -110,11 +111,13 @@ export const faqStyle = tv({
       answer: {
          hidden: {
             dd: 'opacity-0 absolute z-0',
+            svg: 'initial',
          },
       },
       activeFAQ: {
          true: {
             dd: 'static opacity-1 transition delay-[.02] animate-openAsked',
+            svg: 'rotate-180 stroke-softRed',
          },
       },
    },
