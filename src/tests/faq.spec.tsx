@@ -17,4 +17,13 @@ describe('FAQ section', () => {
          "Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.",
       );
    });
+
+   it('Should display some question on device reference faq section', () => {
+      render(<FrequentlyAskedQuestions />);
+
+      screen.getByTestId('What is Bookmark?');
+      screen.getByTestId('How can I request a new browser?');
+      screen.getByTestId('Is there a mobile app?');
+      screen.getByTestId('What about other Chromium browsers?');
+   });
 });

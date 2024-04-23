@@ -4,7 +4,7 @@ import { QuestionComponent } from './QuestionComponent';
 
 const FAQContent = [
    {
-      asked: 'What is Bookman?',
+      asked: 'What is Bookmark?',
       answer:
          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquam tenetur voluptates! Labore reiciendis natus hic qui deserunt delectus tempore!',
    },
