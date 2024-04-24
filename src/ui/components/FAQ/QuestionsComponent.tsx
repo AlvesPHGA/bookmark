@@ -1,5 +1,5 @@
 import { faqStyle } from '../../styles/tagsStyles';
-import { DivComponent } from '../TagsComponents';
+import { DivComponent, NavLinkComponent } from '../TagsComponents';
 import { QuestionComponent } from './QuestionComponent';
 
 const FAQContent = [
@@ -39,6 +39,8 @@ export const QuestionsComponent = () => {
                />
             ))}
          </dl>
+
+         <NavLinkComponent link="blue_cta">More Info</NavLinkComponent>
       </DivComponent>
    );
 };

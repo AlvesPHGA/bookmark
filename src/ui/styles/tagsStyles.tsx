@@ -46,7 +46,7 @@ export const divStyle = tv({
          card_box02: 'py-8 w-full',
          // FAQ
          faq_content: 'w-[25%] text-center mx-auto space-y-6',
-         faq_questions: 'w-[30%] mx-auto ',
+         faq_questions: 'w-[30%] mx-auto',
       },
 
       isContentTab: {
@@ -101,7 +101,7 @@ export const imgStyle = tv({
 
 export const faqStyle = tv({
    slots: {
-      dl: 'space-y-5 border-t-2 border-grayishBlue last:border-b-2 py-5',
+      dl: 'space-y-5 border-t-2 border-grayishBlue border-b-2 py-5 mb-16',
       dt: 'relative flex items-center justify-between px-1 text-xl font-medium text-veryDarkBlue hover:text-softRed transition-all z-10',
       svg: 'hover:stroke-softRed',
       dd: 'text-grayishBlue',
