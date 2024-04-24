@@ -4,7 +4,7 @@ import { DivComponent } from '../TagsComponents';
 
 export const ContactFormComponent = () => {
    return (
-      <form className="flex w-fit mx-auto border">
+      <form className="flex w-fit mx-auto space-x-2">
          <DivComponent>
             <Input />
          </DivComponent>
