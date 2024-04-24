@@ -1,3 +1,4 @@
+import { Contact } from '../ui/partials/Contact';
 import { Download } from '../ui/partials/Download';
 import { Features } from '../ui/partials/Features';
 import { FrequentlyAskedQuestions } from '../ui/partials/FrequentlyAskedQuestions';
@@ -10,6 +11,7 @@ export const Home = () => {
          <Features />
          <Download />
          <FrequentlyAskedQuestions />
+         <Contact />
       </main>
    );
 };
