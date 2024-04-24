@@ -10,6 +10,7 @@ export const sectionStyle = tv({
          features: 'py-20 text-center space-y-16',
          download: 'py-24 space-y-20',
          faq: 'py-24 space-y-20 border',
+         contact: 'py-24 bg-[#5267DF]',
       },
    },
 
@@ -47,6 +48,8 @@ export const divStyle = tv({
          // FAQ
          faq_content: 'w-[25%] text-center mx-auto space-y-6',
          faq_questions: 'w-[30%] mx-auto',
+         // Contact
+         contact_content: 'w-[20%] mx-auto text-center space-y-8',
       },
 
       isContentTab: {
