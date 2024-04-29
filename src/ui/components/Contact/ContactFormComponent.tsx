@@ -2,9 +2,12 @@ import React from 'react';
 import { Button } from '../Form/Button';
 import { Input } from '../Form/Input';
 import { DivComponent } from '../TagsComponents';
+import { errorMessage } from '../../styles/tagsStyles';
 
 export const ContactFormComponent = () => {
    const [email, setEmail] = React.useState('');
+   const [errorInput, setErrorInput] = React.useState(false);
+   const [message, setMessage] = React.useState('');
 
    function handleSubmitContact(ev) {
       const regEmail = /^[a-z0–9._-]+@[a-z0–9.-]+\.[a-z]{2,4}$/;
@@ -12,12 +15,15 @@ export const ContactFormComponent = () => {
       ev.preventDefault();
 
       if (email === '' || email.length < 3) {
-         alert('Preencher campo email');
+         setErrorInput(true);
+         setMessage('Preencher corretamente o campo');
       } else {
+         setErrorInput(false);
          if (!regEmail.test(email)) {
-            alert('Email invalido');
+            setErrorInput(true);
+            setMessage('Email invalido');
          } else {
-            alert('Email valido');
+            setErrorInput(false);
          }
       }
    }
@@ -27,8 +33,9 @@ export const ContactFormComponent = () => {
          onSubmit={handleSubmitContact}
          className="flex w-fit mx-auto space-x-2"
       >
-         <DivComponent>
+         <DivComponent box="contact_form">
             <Input onChange={(ev) => setEmail(ev.currentTarget.value)} />
+            <span className={errorMessage()}>{errorInput && message}</span>
          </DivComponent>
          <Button types="btn_contact">Contact Us</Button>
       </form>

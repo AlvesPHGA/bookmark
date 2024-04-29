@@ -50,10 +50,16 @@ export const divStyle = tv({
          faq_questions: 'w-[30%] mx-auto',
          // Contact
          contact_content: 'w-[20%] mx-auto text-center space-y-8',
+         contact_form:
+            'flex flex-col border border-2 border-transparent h-[72px] rounded-lg',
       },
 
       isContentTab: {
          true: 'flex',
+      },
+
+      errorInput: {
+         true: 'border-red-500 bg-softRed',
       },
    },
 
@@ -124,4 +130,8 @@ export const faqStyle = tv({
          },
       },
    },
+});
+
+export const errorMessage = tv({
+   base: 'text-sm text-white text-base pl-1',
 });
