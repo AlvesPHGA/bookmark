@@ -66,6 +66,7 @@ export const divStyle = tv({
    defaultVariants: {
       box: 'def',
       isContentTab: false,
+      errorInput: false,
    },
 });
 

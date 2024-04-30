@@ -17,9 +17,12 @@ export const SectionComponent = ({
 export const DivComponent = ({
    box,
    isContentTab,
+   errorInput,
    ...props
 }: DivComponentProps) => {
-   return <div className={divStyle({ box, isContentTab })} {...props} />;
+   return (
+      <div className={divStyle({ box, isContentTab, errorInput })} {...props} />
+   );
 };
 
 export const NavLinkComponent = ({
