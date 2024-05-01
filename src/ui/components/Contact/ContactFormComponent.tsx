@@ -24,6 +24,8 @@ export const ContactFormComponent = () => {
             setMessage('Email invalido');
          } else {
             setErrorInput(false);
+            alert('email enviado com sucesso');
+            ev.currentTarget.reset();
          }
       }
    }
