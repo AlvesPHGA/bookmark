@@ -6,7 +6,7 @@ interface InputProps
       VariantProps<typeof inputStyle> {}
 
 const inputStyle = tv({
-   base: 'h-11 w-[280px] text-lg px-2 rounded-md',
+   base: 'h-11 w-[280px] text-lg px-2 rounded-md outline-none',
 });
 
 export const Input = ({ ...props }: InputProps) => {

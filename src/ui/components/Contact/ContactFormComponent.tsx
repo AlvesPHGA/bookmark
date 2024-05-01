@@ -3,6 +3,7 @@ import { Button } from '../Form/Button';
 import { Input } from '../Form/Input';
 import { DivComponent } from '../TagsComponents';
 import { errorMessage } from '../../styles/tagsStyles';
+import { CircleX } from 'lucide-react';
 
 export const ContactFormComponent = () => {
    const [email, setEmail] = React.useState('');
@@ -36,7 +37,10 @@ export const ContactFormComponent = () => {
          className="flex items-baseline w-fit mx-auto space-x-2"
       >
          <DivComponent box="contact_form" errorInput={errorInput && true}>
-            <Input onChange={(ev) => setEmail(ev.currentTarget.value)} />
+            <div className=" w-[320px] rounded-md flex items-center justify-between bg-white pr-1">
+               <Input onChange={(ev) => setEmail(ev.currentTarget.value)} />
+               {errorInput && <CircleX className="stroke-softRed" />}
+            </div>
             <span className={errorMessage()}>{errorInput && message}</span>
          </DivComponent>
          <Button types="btn_contact">Contact Us</Button>
