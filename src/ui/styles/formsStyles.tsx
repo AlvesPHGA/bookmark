@@ -1,5 +1,9 @@
 import { tv } from 'tailwind-variants';
 
+export const formStyle = tv({
+   base: 'flex items-baseline w-fit mx-auto space-x-2',
+});
+
 export const buttonStyle = tv({
    base: 'border-2 border-softRed rounded-md px-7 py-1 text-white bg-softRed hover:text-softRed hover:bg-transparent transition-all',
 

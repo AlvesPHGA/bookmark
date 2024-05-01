@@ -4,6 +4,7 @@ import { Input } from '../Form/Input';
 import { DivComponent } from '../TagsComponents';
 import { errorMessage } from '../../styles/tagsStyles';
 import { CircleX } from 'lucide-react';
+import { formStyle } from '../../styles/formsStyles';
 
 export const ContactFormComponent = () => {
    const [email, setEmail] = React.useState('');
@@ -32,10 +33,7 @@ export const ContactFormComponent = () => {
    }
 
    return (
-      <form
-         onSubmit={handleSubmitContact}
-         className="flex items-baseline w-fit mx-auto space-x-2"
-      >
+      <form onSubmit={handleSubmitContact} className={formStyle()}>
          <DivComponent box="contact_form" errorInput={errorInput && true}>
             <div className=" w-[320px] rounded-md flex items-center justify-between bg-white pr-1">
                <Input onChange={(ev) => setEmail(ev.currentTarget.value)} />
