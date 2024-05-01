@@ -1,11 +1,7 @@
 import React from 'react';
 import { faqStyle } from '../../styles/tagsStyles';
 import { ChevronUp } from 'lucide-react';
-
-interface QuestionComponentProps {
-   asked: string;
-   answer: string;
-}
+import { QuestionComponentProps } from '../../../data/@types/IQuestion';
 
 const { dt, dd, svg } = faqStyle({ answer: 'hidden' });
 
