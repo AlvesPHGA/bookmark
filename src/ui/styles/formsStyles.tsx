@@ -4,6 +4,10 @@ export const formStyle = tv({
    base: 'flex items-baseline w-fit mx-auto space-x-2',
 });
 
+export const inputStyle = tv({
+   base: 'h-11 w-[280px] text-lg px-2 rounded-md outline-none',
+});
+
 export const buttonStyle = tv({
    base: 'border-2 border-softRed rounded-md px-7 py-1 text-white bg-softRed hover:text-softRed hover:bg-transparent transition-all',
 

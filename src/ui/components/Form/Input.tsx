@@ -1,13 +1,5 @@
-import React from 'react';
-import { VariantProps, tv } from 'tailwind-variants';
-
-interface InputProps
-   extends React.ComponentProps<'input'>,
-      VariantProps<typeof inputStyle> {}
-
-const inputStyle = tv({
-   base: 'h-11 w-[280px] text-lg px-2 rounded-md outline-none',
-});
+import { InputProps } from '../../../data/@types/IForms';
+import { inputStyle } from '../../styles/formsStyles';
 
 export const Input = ({ ...props }: InputProps) => {
    return <input className={inputStyle()} type="text" {...props} />;
