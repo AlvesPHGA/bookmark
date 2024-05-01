@@ -6,6 +6,8 @@ export interface FormProps
    extends React.ComponentProps<'form'>,
       VariantProps<typeof formStyle> {}
 
+export interface InputProps extends React.ComponentProps<'input'> {}
+
 export interface ButtonProps
    extends React.ComponentProps<'button'>,
       VariantProps<typeof buttonStyle> {}
