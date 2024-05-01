@@ -1,3 +1,4 @@
+import { CardProps } from '../../../data/@types/ICard';
 import { imgStyle } from '../../styles/tagsStyles';
 import {
    DivComponent,
@@ -7,17 +8,7 @@ import {
 
 const { browsers, dots } = imgStyle();
 
-export const CardComponent = ({
-   src,
-   alt,
-   title,
-   span,
-}: {
-   src: string;
-   alt: string;
-   title: string;
-   span: string;
-}) => {
+export const CardComponent = ({ src, alt, title, span }: CardProps) => {
    return (
       <DivComponent box="card">
          <DivComponent box="card_box01">
