@@ -52,6 +52,8 @@ export const divStyle = tv({
          contact_content: 'w-[20%] mx-auto text-center space-y-8',
          contact_form:
             'flex flex-col border border-2 border-transparent h-[72px] rounded-lg',
+         // Footer
+         footer_container: 'w-[1200px] mx-auto',
       },
 
       isContentTab: {
