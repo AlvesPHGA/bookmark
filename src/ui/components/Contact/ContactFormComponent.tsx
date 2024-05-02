@@ -36,7 +36,10 @@ export const ContactFormComponent = () => {
       <form onSubmit={handleSubmitContact} className={formStyle()}>
          <DivComponent box="contact_form" errorInput={errorInput && true}>
             <div className=" w-[320px] rounded-md flex items-center justify-between bg-white pr-1">
-               <Input onChange={(ev) => setEmail(ev.currentTarget.value)} />
+               <Input
+                  onChange={(ev) => setEmail(ev.currentTarget.value)}
+                  placeholder="Enter email"
+               />
                {errorInput && <CircleX className="stroke-softRed" />}
             </div>
             <span className={errorMessage()}>{errorInput && message}</span>
