@@ -17,7 +17,7 @@ export const Footer = () => {
                   <NavLinkComponent>Contact</NavLinkComponent>
                </DivComponent>
             </DivComponent>
-            <DivComponent>
+            <DivComponent box="footer_socialMedia">
                <NavLinkComponent>
                   <FacebookIcon />
                </NavLinkComponent>
