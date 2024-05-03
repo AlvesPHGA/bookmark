@@ -1,4 +1,5 @@
 import { Logo } from '../../components/SVGs/Logo';
+import { FacebookIcon, TwitterIcon } from '../../components/SVGs/SocialMedia';
 import {
    DivComponent,
    NavLinkComponent,
@@ -8,18 +9,21 @@ export const Footer = () => {
    return (
       <footer className="bg-veryDarkBlue py-10">
          <DivComponent box="footer_container">
-            <DivComponent>
+            <DivComponent box="footer_box01">
                <Logo fill="#fff" />
-               <DivComponent>
+               <DivComponent box="footer_link">
                   <NavLinkComponent>Features</NavLinkComponent>
                   <NavLinkComponent>Pricing</NavLinkComponent>
                   <NavLinkComponent>Contact</NavLinkComponent>
                </DivComponent>
             </DivComponent>
             <DivComponent>
-               <NavLinkComponent></NavLinkComponent>
-               <NavLinkComponent></NavLinkComponent>
-               <NavLinkComponent></NavLinkComponent>
+               <NavLinkComponent>
+                  <FacebookIcon />
+               </NavLinkComponent>
+               <NavLinkComponent>
+                  <TwitterIcon />
+               </NavLinkComponent>
             </DivComponent>
          </DivComponent>
       </footer>

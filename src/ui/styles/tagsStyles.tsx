@@ -54,6 +54,8 @@ export const divStyle = tv({
             'flex flex-col border border-2 border-transparent h-[72px] rounded-lg',
          // Footer
          footer_container: 'w-[1200px] mx-auto',
+         footer_box01: 'flex items-center gap-16',
+         footer_link: 'space-x-10 uppercase',
       },
 
       isContentTab: {
