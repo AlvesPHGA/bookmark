@@ -10,7 +10,7 @@ export const Header = () => {
    return (
       <header className="py-10">
          <SectionComponent>
-            <Logo />
+            <Logo fill="#242A45" />
 
             <DivComponent box="header">
                <NavComponent />

@@ -9,7 +9,7 @@ export const Footer = () => {
       <footer className="bg-veryDarkBlue py-10">
          <DivComponent box="footer_container">
             <DivComponent>
-               <Logo />
+               <Logo fill="#fff" />
                <DivComponent>
                   <NavLinkComponent>Features</NavLinkComponent>
                   <NavLinkComponent>Pricing</NavLinkComponent>
