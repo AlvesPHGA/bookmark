@@ -12,16 +12,22 @@ export const Footer = () => {
             <DivComponent box="footer_box01">
                <Logo data-testid="logo_footer" fill="#fff" />
                <DivComponent box="footer_link">
-                  <NavLinkComponent>Features</NavLinkComponent>
-                  <NavLinkComponent>Pricing</NavLinkComponent>
-                  <NavLinkComponent>Contact</NavLinkComponent>
+                  <NavLinkComponent link="link_footer">
+                     Features
+                  </NavLinkComponent>
+                  <NavLinkComponent link="link_footer">
+                     Pricing
+                  </NavLinkComponent>
+                  <NavLinkComponent link="link_footer">
+                     Contact
+                  </NavLinkComponent>
                </DivComponent>
             </DivComponent>
             <DivComponent box="footer_socialMedia">
-               <NavLinkComponent>
+               <NavLinkComponent link="social_media">
                   <FacebookIcon />
                </NavLinkComponent>
-               <NavLinkComponent>
+               <NavLinkComponent link="social_media">
                   <TwitterIcon />
                </NavLinkComponent>
             </DivComponent>

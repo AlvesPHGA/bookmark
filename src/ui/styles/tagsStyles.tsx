@@ -87,6 +87,8 @@ export const navLinkStyle = tv({
             'bg-[#5267DF] py-2.5 px-6 rounded text-white font-medium border-2 border-[#5267DF] hover:text-[#5267DF] hover:bg-transparent block w-fit',
          white_cta:
             'bg-[#F7F7F7] py-2.5 px-6 rounded text-grayishBlue font-medium border-2 border-[#F7F7F7] hover:border-[#f7f7f7] hover:bg-transparent',
+         link_footer: 'text-white hover:text-softRed',
+         social_media: 'hover:scale-125',
       },
 
       card: {
