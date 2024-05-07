@@ -36,6 +36,14 @@ export default {
             openAsked: 'open 0.3s ease-in-out',
          },
       },
+
+      screens: {
+         dlg: { max: '1024px' },
+         dmd: { max: '768px' },
+         dml: { max: '425px' },
+         dmm: { max: '425px' },
+         dms: { max: '320px' },
+      },
    },
    plugins: [],
 };
