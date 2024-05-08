@@ -1,9 +1,12 @@
 import React from 'react';
 import { Button } from '../Form/Button';
-import { DivComponent } from '../TagsComponents';
 import { ContentTabsComponent } from './ContentTabsComponent';
 
 const legendButton = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
+
+import { featuresStyle } from '../../styles/featuresStyle';
+
+const { tab_component, tab_buttons } = featuresStyle();
 
 export const TabComponent = () => {
    const [activeTab, setActiveTab] = React.useState(0);
@@ -15,8 +18,8 @@ export const TabComponent = () => {
    }
 
    return (
-      <DivComponent box="tab_component">
-         <DivComponent box="tab_buttons">
+      <div className={tab_component()}>
+         <div className={tab_buttons()}>
             {legendButton.map((legend, index) => (
                <Button
                   key={index}
@@ -28,9 +31,9 @@ export const TabComponent = () => {
                   {legend}
                </Button>
             ))}
-         </DivComponent>
+         </div>
 
          <ContentTabsComponent value={contentTab} />
-      </DivComponent>
+      </div>
    );
 };

@@ -1,14 +1,17 @@
 import { BackIllusComponent } from '../components/BackIllusComponent';
 import { ContentFeaturesComponent } from '../components/Features/ContentFeaturesComponent';
 import { TabComponent } from '../components/Features/TabComponent';
-import { SectionComponent } from '../components/TagsComponents';
+
+import { featuresStyle } from '../styles/featuresStyle';
+
+const { section } = featuresStyle();
 
 export const Features = () => {
    return (
-      <SectionComponent section="features">
+      <section className={section()}>
          <ContentFeaturesComponent />
          <TabComponent />
          <BackIllusComponent typeBack="blue_feat" />
-      </SectionComponent>
+      </section>
    );
 };
