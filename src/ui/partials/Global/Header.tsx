@@ -1,22 +1,22 @@
 import { Button } from '../../components/Form/Button';
 import { NavComponent } from '../../components/NavComponent';
 import { Logo } from '../../components/SVGs/Logo';
-import {
-   DivComponent,
-   SectionComponent,
-} from '../../components/TagsComponents';
+
+import { headerStyle } from '../../styles/headerStyle';
+
+const { header, headerContainer, divNav } = headerStyle();
 
 export const Header = () => {
    return (
-      <header className="py-10">
-         <SectionComponent>
+      <header className={header()}>
+         <div className={headerContainer()}>
             <Logo fill="#242A45" />
 
-            <DivComponent box="header">
+            <div className={divNav()}>
                <NavComponent />
                <Button data-testid="login">Login</Button>
-            </DivComponent>
-         </SectionComponent>
+            </div>
+         </div>
       </header>
    );
 };
