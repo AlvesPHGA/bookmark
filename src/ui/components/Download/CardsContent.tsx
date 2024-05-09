@@ -1,5 +1,8 @@
-import { DivComponent } from '../TagsComponents';
 import { CardComponent } from './CardComponent';
+
+import { downloadStyle } from '../../styles/downloadStyle';
+
+const { cards } = downloadStyle();
 
 const cardContent = [
    {
@@ -24,7 +27,7 @@ const cardContent = [
 
 export const CardsContent = () => {
    return (
-      <DivComponent box="down_cards">
+      <div className={cards()}>
          {cardContent.map((content, index) => (
             <CardComponent
                key={index}
@@ -34,6 +37,6 @@ export const CardsContent = () => {
                span={content.span}
             />
          ))}
-      </DivComponent>
+      </div>
    );
 };

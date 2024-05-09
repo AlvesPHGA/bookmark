@@ -1,12 +1,15 @@
 import { CardsContent } from '../components/Download/CardsContent';
 import { DownloadContentComponent } from '../components/Download/DownloadContentComponent';
-import { SectionComponent } from '../components/TagsComponents';
+
+import { downloadStyle } from '../styles/downloadStyle';
+
+const { section } = downloadStyle();
 
 export const Download = () => {
    return (
-      <SectionComponent section="download">
+      <section className={section()}>
          <DownloadContentComponent />
          <CardsContent />
-      </SectionComponent>
+      </section>
    );
 };
