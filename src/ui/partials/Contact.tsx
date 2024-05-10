@@ -1,12 +1,15 @@
 import { ContactContentComponent } from '../components/Contact/ContactContentComponent';
 import { ContactFormComponent } from '../components/Contact/ContactFormComponent';
-import { SectionComponent } from '../components/TagsComponents';
+
+import { contactStyle } from '../styles/contactStyle';
+
+const { section } = contactStyle();
 
 export const Contact = () => {
    return (
-      <SectionComponent section="contact">
+      <section className={section()}>
          <ContactContentComponent />
          <ContactFormComponent />
-      </SectionComponent>
+      </section>
    );
 };
