@@ -1,12 +1,15 @@
 import { FAQContentComponent } from '../components/FAQ/FAQContentComponent';
 import { QuestionsComponent } from '../components/FAQ/QuestionsComponent';
-import { SectionComponent } from '../components/TagsComponents';
+
+import { faqStyle } from '../styles/faqStyle';
+
+const { section } = faqStyle();
 
 export const FrequentlyAskedQuestions = () => {
    return (
-      <SectionComponent section="faq">
+      <section className={section()}>
          <FAQContentComponent />
          <QuestionsComponent />
-      </SectionComponent>
+      </section>
    );
 };

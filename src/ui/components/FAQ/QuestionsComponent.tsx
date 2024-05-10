@@ -1,6 +1,9 @@
-import { faqStyle } from '../../styles/tagsStyles';
-import { DivComponent, NavLinkComponent } from '../TagsComponents';
+import { NavLinkComponent } from '../TagsComponents';
 import { QuestionComponent } from './QuestionComponent';
+
+import { faqStyle } from '../../styles/faqStyle';
+
+const { questions, dl } = faqStyle();
 
 const FAQContent = [
    {
@@ -25,11 +28,9 @@ const FAQContent = [
    },
 ];
 
-const { dl } = faqStyle();
-
 export const QuestionsComponent = () => {
    return (
-      <DivComponent box="faq_questions">
+      <div className={questions()}>
          <dl className={dl()}>
             {FAQContent.map((faq, index) => (
                <QuestionComponent
@@ -41,6 +42,6 @@ export const QuestionsComponent = () => {
          </dl>
 
          <NavLinkComponent link="blue_cta">More Info</NavLinkComponent>
-      </DivComponent>
+      </div>
    );
 };
