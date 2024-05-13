@@ -25,39 +25,14 @@ export const divStyle = tv({
    variants: {
       box: {
          def: 'flex items-center',
-         header: 'flex items-center space-x-10',
-         // Simple bookmark manager
-         sbm: 'w-[1200px] mx-auto flex items-center h-[500px]',
-         sbm_content: 'space-y-10 w-[40%] py-10',
-         cta: 'space-x-10 flex',
          // Features
-         feature_content: 'w-[1200px] mx-auto space-y-5',
-         tab_component: 'w-[1200px] mx-auto space-y-16',
-         tab_buttons: 'mx-auto',
          tab_contents:
             'hidden w-full h-fit  items-center justify-between pr-14 z-10',
          tab_content: 'relative space-y-7 text-left w-[420px]',
-         // Download
-         down_content: 'w-[1200px] mx-auto space-y-5 w-[30%] text-center',
-         down_cards:
-            'w-[1200px] mx-auto flex items-center justify-between py-16',
-         // Card
-         card: 'w-[360px] flex flex-col items-center h-fit pt-16 rounded-lg shadow-2xl shadow-grayishBlue mx-auto first:absolute first:top-0 last:absolute last:bottom-0 last:right-0',
-         card_box01: 'w-fit mx-auto text-center space-y-6 mb-10',
-         card_box02: 'py-8 w-full',
-         // FAQ
-         faq_content: 'w-[25%] text-center mx-auto space-y-6',
-         faq_questions: 'w-[30%] mx-auto',
+
          // Contact
-         contact_content: 'w-[20%] mx-auto text-center space-y-8',
          contact_form:
             'flex flex-col border border-2 border-transparent h-[72px] rounded-lg',
-         // Footer
-         footer_container:
-            'w-[1200px] mx-auto flex items-center justify-between',
-         footer_box01: 'flex items-center gap-16',
-         footer_link: 'space-x-10 uppercase',
-         footer_socialMedia: 'flex gap-10 items-center',
       },
 
       isContentTab: {

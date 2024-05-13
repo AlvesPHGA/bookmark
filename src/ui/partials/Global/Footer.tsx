@@ -1,17 +1,17 @@
 import { Logo } from '../../components/SVGs/Logo';
 import { FacebookIcon, TwitterIcon } from '../../components/SVGs/SocialMedia';
-import {
-   DivComponent,
-   NavLinkComponent,
-} from '../../components/TagsComponents';
+import { NavLinkComponent } from '../../components/TagsComponents';
+
+import { footerStyle } from '../../styles/footerStyle';
+const { footer, container, box, link_nav, box_social_media } = footerStyle();
 
 export const Footer = () => {
    return (
-      <footer className="bg-veryDarkBlue py-10">
-         <DivComponent box="footer_container">
-            <DivComponent box="footer_box01">
+      <footer className={footer()}>
+         <div className={container()}>
+            <div className={box()}>
                <Logo data-testid="logo_footer" fill="#fff" />
-               <DivComponent box="footer_link">
+               <div className={link_nav()}>
                   <NavLinkComponent link="link_footer">
                      Features
                   </NavLinkComponent>
@@ -21,17 +21,18 @@ export const Footer = () => {
                   <NavLinkComponent link="link_footer">
                      Contact
                   </NavLinkComponent>
-               </DivComponent>
-            </DivComponent>
-            <DivComponent box="footer_socialMedia">
+               </div>
+            </div>
+
+            <div className={box_social_media()}>
                <NavLinkComponent link="social_media">
                   <FacebookIcon />
                </NavLinkComponent>
                <NavLinkComponent link="social_media">
                   <TwitterIcon />
                </NavLinkComponent>
-            </DivComponent>
-         </DivComponent>
+            </div>
+         </div>
       </footer>
    );
 };
