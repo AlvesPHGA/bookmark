@@ -80,7 +80,7 @@ export const navLinkStyle = tv({
 export const svgStyle = tv({
    slots: {
       illustration:
-         'absolute w-[60%] h-[512px] object-contain left-[590px] z-10 top-0',
+         'absolute w-[60%] h-[512px] object-contain left-[590px] z-10 top-0 ',
       illustration_tab: 'rounded-md w-[55%]  h-[450px]',
    },
 });
